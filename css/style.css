@@ -1,0 +1,152 @@
+@font-face {
+  font-family: Ubuntu;
+  src: url(Ubuntu-Bold.ttf);
+  font-weight: 2000;
+  
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url(Ubuntu-Medium.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url(Ubuntu-Regular.ttf);
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: "Ubuntu";
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  height: 84vh;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e76f51;
+  height: 8vh;
+  padding: 0 3rem;
+}
+
+.logo {
+  font-family: "Ubuntu";
+  font-weight: 1000;
+  color: white;
+}
+.logo::selection{
+  color: black;
+}
+
+.links {
+  font-family: "Ubuntu";
+  font-weight: 1000;
+  display: flex;
+  gap: 1rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.35s ease-in-out;
+}
+
+.links a:hover {
+  opacity: 0.4;
+  transition: all 0.15s ease-in-out;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 2rem;
+  gap: 1rem;
+  background-color:#f4a261 ;
+  flex: 3;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 2rem 0;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  max-width: 560px;
+}
+
+main section img {
+  height: 75%;
+  width: 75%;
+}
+
+
+
+main section .section-header {
+  display: flex;
+  height: 10%;
+  font-weight: 600;
+}
+
+main section .section-content {
+  padding: 0 1rem;
+  overflow-y: hidden;
+  height: 80%;
+}
+
+aside {
+  padding: 2rem 2rem;
+  background-color: darksalmon;
+  flex: 1;
+  color: white;
+  
+}
+
+aside ul li {
+  list-style-type: none;
+  padding: 0.4em;
+}
+aside h2{
+margin-bottom: 1em;
+}
+
+
+
+footer {
+  background-color: #e76f51;
+  height: 8vh;
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  main {
+    flex-direction: column;
+  }
+}
